@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USE_LIBJPEG=0
+USE_LIBJPEG=1
 
 if [ "$#" -eq 0 ]; then
 	echo "Usage: install_submodules.sh <TIRAMISU_ROOT_PATH>"

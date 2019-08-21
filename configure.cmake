@@ -7,10 +7,10 @@ set(USE_GPU FALSE)
 set(USE_MPI FALSE)
 
 # Set to TRUE if you wish to use libpng which is needed only by the Halide benchmarks
-set(USE_LIBPNG FALSE)
+set(USE_LIBPNG TRUE)
 
 # Set to TRUE if you wish to use libjpeg which is needed only by the Halide benchmarks
-set(USE_LIBJPEG FALSE)
+set(USE_LIBJPEG TRUE)
 
 # Set to TRUE if you wish to use cuDNN for benchmark comparisons
 set(USE_CUDNN FALSE)
@@ -32,7 +32,7 @@ set(MPI_NODES "")
 # include and lib.
 # Example:
 # set(MKL_PREFIX "/data/scratch/baghdadi/libs/intel/mkl/")
-set(MKL_PREFIX "")
+set(MKL_PREFIX "/opt/intel/mkl/")
 
 # LLVM_CONFIG_BIN: Directory containing llvm-config executable.
 set(LLVM_CONFIG_BIN "${CMAKE_SOURCE_DIR}/3rdParty/llvm/prefix/bin/")
